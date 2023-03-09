@@ -1,18 +1,26 @@
-var quote1 = '"If the universe is meaningless, so is the statement that it is so... The meaning and purpose of dancing is the dance."';
-var author1 = '- Alan Watts';
-var quote2 = '"Realize deeply that the present moment is all you have. Make the NOW the primary focus of your life."';
-var author2 = '- Eckhart Tolle';
-var quote3 = '"We are bathing in mystery and confusion on many subjects, and I think that will always be our destiny. The universe will always be much richer than our ability to understand it."';
-var author3 = '- Carl Sagan';
-var quote4 = '"If you don\'t have a plan, you become part of somebody else\'s plan."';
-var author4 = '- Terence McKenna';
-var quote5 = '"All companionship can consist in only the strengthening of neighboring solitudes... for when a person abandons himself, he is no longer anything, and when two people both give themselves up in order to become closer to each other, there is no longer any ground beneath them and their being together is a continual falling."';
-var author5 = '- Rainer Maria Rilke';
-var quote6 = '"They are (to quote the words used by Dr. J. R. Smythies in a recent paper in the American Journal of Psychiatry) the work of a highly differentiated mental compartment, without any apparent connection, emotional or volitional, with the aims, interests, or feelings of the person concerned."';
-var author6 = '- Aldous Huxley';
+var quote1 = '"There would be no music without the words."';
+var author1 = '- Bob Dylan';
 
-var quoteArray = [quote1, quote2, quote3, quote4, quote5, quote6];
-var authorArray = [author1, author2, author3, author4, author5, author6];
+var quote2 = '"If the universe is meaningless, so is the statement that it is so.. The meaning and purpose of dancing is the dance."';
+var author2 = '- Alan Watts';
+
+var quote3 = '"If you don\'t have a plan, you become part of somebody else\'s plan."';
+var author3 = '- Terence McKenna';
+
+var quote4 = '"They are (to quote the words used by Dr. J. R. Smythies in a recent paper in the American Journal of Psychiatry) the work of a highly differentiated mental compartment, without any apparent connection, emotional or volitional, with the aims, interests, or feelings of the person concerned."';
+var author4 = '- Aldous Huxley';
+
+var quote5 = '"We are bathing in mystery and confusion on many subjects, and I think that will always be our destiny. The universe will always be much richer than our ability to understand it."';
+var author5 = '- Carl Sagan';
+
+var quote6 = '"Realize deeply that the present moment is all you have. Make the NOW the primary focus of your life."';
+var author6 = '- Eckhart Tolle';
+
+var quote7 = '"All companionship can consist in only the strengthening of neighboring solitudes... for when a person abandons himself, he is no longer anything, and when two people both give themselves up in order to become closer to each other, there is no longer any ground beneath them and their being together is a continual falling."';
+var author7 = '- Rainer Maria Rilke';
+
+var quoteArray = [quote1, quote2, quote3, quote4, quote5, quote6, quote7];
+var authorArray = [author1, author2, author3, author4, author5, author6, author7];
 
 var quote = document.getElementById('quote');
 var author = document.getElementById('author');
@@ -27,9 +35,9 @@ var i = 0;
 
 function previous (event) {
     if (i === 0) {
-        quote.innerHTML = quoteArray[5];
-        author.innerHTML = authorArray[5];
-        i = 5;
+        quote.innerHTML = quoteArray[6];
+        author.innerHTML = authorArray[6];
+        i = 6;
     }
     else if (i === 1) {
         quote.innerHTML = quoteArray[0];
@@ -55,6 +63,11 @@ function previous (event) {
         quote.innerHTML = quoteArray[4];
         author.innerHTML = authorArray[4];
         i = 4;
+    }
+    else if (i === 6) {
+        quote.innerHTML = quoteArray[5];
+        author.innerHTML = authorArray[5];
+        i = 5;
     }
 }
 
@@ -85,6 +98,11 @@ function next (event) {
         i = 5;
     }
     else if (i === 5) {
+        quote.innerHTML = quoteArray[6];
+        author.innerHTML = authorArray[6];
+        i = 6;
+    }
+    else if (i === 6) {
         quote.innerHTML = quoteArray[0];
         author.innerHTML = authorArray[0];
         i = 0;
