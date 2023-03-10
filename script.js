@@ -19,8 +19,11 @@ var author6 = '- Eckhart Tolle';
 var quote7 = '"All companionship can consist in only the strengthening of neighboring solitudes... for when a person abandons himself, he is no longer anything, and when two people both give themselves up in order to become closer to each other, there is no longer any ground beneath them and their being together is a continual falling."';
 var author7 = '- Rainer Maria Rilke';
 
-var quoteArray = [quote1, quote2, quote3, quote4, quote5, quote6, quote7];
-var authorArray = [author1, author2, author3, author4, author5, author6, author7];
+var quote8 = '"It does not matter how slowly you go, so long as you do not stop."';
+var author8 = '- Andy Warhol';
+
+var quoteArray = [quote1, quote2, quote3, quote4, quote5, quote6, quote7, quote8];
+var authorArray = [author1, author2, author3, author4, author5, author6, author7, author8];
 
 var quote = document.getElementById('quote');
 var author = document.getElementById('author');
@@ -35,9 +38,9 @@ var i = 0;
 
 function previous (event) {
     if (i === 0) {
-        quote.innerHTML = quoteArray[6];
-        author.innerHTML = authorArray[6];
-        i = 6;
+        quote.innerHTML = quoteArray[7];
+        author.innerHTML = authorArray[7];
+        i = 7;
     }
     else if (i === 1) {
         quote.innerHTML = quoteArray[0];
@@ -68,6 +71,11 @@ function previous (event) {
         quote.innerHTML = quoteArray[5];
         author.innerHTML = authorArray[5];
         i = 5;
+    }
+    else if (i === 7) {
+        quote.innerHTML = quoteArray[6];
+        author.innerHTML = authorArray[6];
+        i = 6;
     }
 }
 
@@ -103,6 +111,11 @@ function next (event) {
         i = 6;
     }
     else if (i === 6) {
+        quote.innerHTML = quoteArray[7];
+        author.innerHTML = authorArray[7];
+        i = 7;
+    }
+    else if (i === 7) {
         quote.innerHTML = quoteArray[0];
         author.innerHTML = authorArray[0];
         i = 0;
