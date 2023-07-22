@@ -31,12 +31,12 @@ var author = document.getElementById('author');
 quote.innerHTML = quoteArray[0];
 author.innerHTML = authorArray[0];
 
-var previousButton = document.getElementById('previous-button');
+//var previousButton = document.getElementById('previous-button');
 var nextButton = document.getElementById('next-button');
 
 var i = 0;
 
-function previous (event) {
+/*function previous (event) {
     if (i === 0) {
         quote.innerHTML = quoteArray[7];
         author.innerHTML = authorArray[7];
@@ -77,7 +77,7 @@ function previous (event) {
         author.innerHTML = authorArray[6];
         i = 6;
     }
-}
+}*/
 
 function next (event) {
     if (i === 0) {
@@ -124,5 +124,5 @@ function next (event) {
 
 //setInterval(next, 16000);
 
-previousButton.addEventListener("click", previous);
+//previousButton.addEventListener("click", previous);
 nextButton.addEventListener("click", next);
