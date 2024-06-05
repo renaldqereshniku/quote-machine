@@ -22,8 +22,11 @@ var author7 = '- Rainer Maria Rilke';
 var quote8 = '"It does not matter how slowly you go, so long as you do not stop."';
 var author8 = '- Andy Warhol';
 
-var quoteArray = [quote1, quote2, quote3, quote4, quote5, quote6, quote7, quote8];
-var authorArray = [author1, author2, author3, author4, author5, author6, author7, author8];
+var quote9 = '"When we speak of the world, we really only speak of an impression of the world. The world is an image, even when we have a scientific conception of it and assert: "This is so and so," it is still only an image."';
+var author9 = '- Carl Jung';
+
+var quoteArray = [quote1, quote2, quote3, quote4, quote5, quote6, quote7, quote8, quote9];
+var authorArray = [author1, author2, author3, author4, author5, author6, author7, author8, author9];
 
 var quote = document.getElementById('quote');
 var author = document.getElementById('author');
@@ -116,6 +119,11 @@ function next (event) {
         i = 7;
     }
     else if (i === 7) {
+        quote.innerHTML = quoteArray[8];
+        author.innerHTML = authorArray[8];
+        i = 8;
+    }
+        else if (i === 8) {
         quote.innerHTML = quoteArray[0];
         author.innerHTML = authorArray[0];
         i = 0;
