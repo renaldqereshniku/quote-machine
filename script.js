@@ -25,8 +25,12 @@ var author8 = '- Andy Warhol';
 var quote9 = '"When we speak of the world, we really only speak of an impression of the world. The world is an image, even when we have a scientific conception of it and assert: "This is so and so," it is still only an image."';
 var author9 = '- Carl Jung';
 
-var quoteArray = [quote1, quote2, quote3, quote4, quote5, quote6, quote7, quote8, quote9];
-var authorArray = [author1, author2, author3, author4, author5, author6, author7, author8, author9];
+var quote10 = '"Birds flying high/nYou know how I feel Sun in the sky You know how I feel Breeze drifting on by You know how I feel"';
+var author10 = '- Nina Simone';
+
+
+var quoteArray = [quote1, quote2, quote3, quote4, quote5, quote6, quote7, quote8, quote9, quote10];
+var authorArray = [author1, author2, author3, author4, author5, author6, author7, author8, author9, author10];
 
 var quote = document.getElementById('quote');
 var author = document.getElementById('author');
@@ -124,6 +128,11 @@ function next (event) {
         i = 8;
     }
         else if (i === 8) {
+        quote.innerHTML = quoteArray[9];
+        author.innerHTML = authorArray[9];
+        i = 9;
+    }
+        else if (i === 9) {
         quote.innerHTML = quoteArray[0];
         author.innerHTML = authorArray[0];
         i = 0;
