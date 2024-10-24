@@ -25,7 +25,7 @@ var author8 = '- Andy Warhol';
 var quote9 = '"When we speak of the world, we really only speak of an impression of the world. The world is an image, even when we have a scientific conception of it and assert: "This is so and so," it is still only an image."';
 var author9 = '- Carl Jung';
 
-var quote10 = '"Birds flying high\nYou know how I feel Sun in the sky You know how I feel Breeze drifting on by You know how I feel"';
+var quote10 = '"Birds flying high" "\n" "You know how I feel Sun in the sky You know how I feel Breeze drifting on by You know how I feel"';
 var author10 = '- Nina Simone';
 
 
